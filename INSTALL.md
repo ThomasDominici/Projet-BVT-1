@@ -5,7 +5,8 @@ Le logiciel John The Ripper est un logiciel open source qui vous permettra de r�
 
 # Comment fonctionne John The Ripper ?
 
-Parler du principe du hash et comment le logiciel interagit avec
+John réussit à trouver les mots de passe en comparant leur hash avec les hashs des mots de passe qu'il essaye afin de trouver une correspondance.
+Le hachage de mot de passe est une pratique de sécurité des plus basiques qui consiste à brouiller les données en changer ce mot de passe en une série de caractères unique : le hash. Ce hash peut être créé par différents algorithmes (comme MD5, SHA1, SHA56...). Heureusement, John The Ripper est capable de décrypter les hashs de nombreux algorithmes de hashage. Il est même possible de télécharger des extensions si un algorithme n'est pas reconnu.
 
 # Choix techniques : quel OS, quelle version, etc.  
 
