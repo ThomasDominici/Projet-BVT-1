@@ -8,3 +8,12 @@ Résultats obtenus : ce qui a fonctionné
 Améliorations possibles : suggestions d’améliorations futures  
 
 
+![Image 1](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/1.JPG?raw=true)
+
+![Image 2 ](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/1.5.JPG)
+
+![Image 3](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/2.JPG)
+
+![Image 4](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/3.JPG)
+
+![Image 5](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/4.JPG)
