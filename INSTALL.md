@@ -10,6 +10,7 @@ Le logiciel John The Ripper est un logiciel open source qui vous permettra de r�
 # Choix techniques : quel OS, quelle version, etc.  
 
 Ce logiciel fonctionnant de façon similaire sur une multitude d'OS, dans ce guide, nous verrons les étapes d'installation du logiciel sur un système Ubuntu. Ubuntu est un OS libre d'accès et simple à utiliser, nous le recommandons pour une première prise en main. Il faudra l'adapter à vos besoins si vous décidez de changer d'OS par la suite.
+Ce guide d'installation est créé à des fins éducatives et s'applique ici uniquement à un système Ubuntu. Vous pouvez visiter le [site officiel](https://www.openwall.com/john/) pour plus de renseignements ou pour l'installation sur d'autres OS. 
 
 
 # Étapes d'installation et de configuration : instruction étape par étape  
