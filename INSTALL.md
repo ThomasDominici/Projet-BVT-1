@@ -41,9 +41,9 @@ La ligne **usage** montre que nous pouvons fournir à John un fichier contenant 
 
 Voici quelques exemples d'options envisageables pour John : 
 
-1. --single: mode par défaut, John tente des combinaisons variables en fonction du nom de l'utilisateur.
-2. --wordlist : l'attaque par dictionnaire. John utilise une liste de mots de passe fournis afin de craquer le mot de passe du fichier désigné.
-3. --incremental : brut force, john teste toutes les combinaisons de caractères jsuqu'à trouver le mot de passe. Infaillible en théorie mais peut prendre du temps en fonction de la force du mot de passe du fichier sélectionné.
+1. **--single** : mode par défaut, John tente des combinaisons variables en fonction du nom de l'utilisateur.
+2. **--wordlist** : l'attaque par dictionnaire. John utilise une liste de mots de passe fournis afin de craquer le mot de passe du fichier désigné.
+3. **--incremental** : brut force, john teste toutes les combinaisons de caractères jsuqu'à trouver le mot de passe. Infaillible en théorie mais peut prendre du temps en fonction de la force du mot de passe du fichier sélectionné.
 
 
 # Difficultés rencontrées : problèmes techniques rencontrés  
@@ -51,5 +51,7 @@ Solutions trouvées : Solutions et alternatives trouvées
 Tests réalisés : description des tests de performance, de sécurité, etc.  
 Résultats obtenus : ce qui a fonctionné  
 Améliorations possibles : suggestions d’améliorations futures  
+
+**Pour désinstaller : sudo snap remove john-the-ripper**
 
 
