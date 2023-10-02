@@ -5,7 +5,7 @@ Le logiciel John The Ripper est un logiciel open source qui vous permettra de r√
 
 # Comment fonctionne John The Ripper ?
 
-
+Parler du principe du hash et comment le logiciel interagit avec
 
 # Choix techniques : quel OS, quelle version, etc.  
 
