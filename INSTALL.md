@@ -3,6 +3,10 @@
 Vous êtes en possession d'un dossier crypté dont vous avez oublié le mot de passe ou vous êtes en entreprise et devez tester la force des mots de passe de votre service ?
 Le logiciel John The Ripper est un logiciel open source qui vous permettra de réaliser vos tests de façon rapide et simple afin d'assurer votre sécurité et celle de vos collaborateurs. 
 
+# Comment fonctionne John The Ripper ?
+
+
+
 # Choix techniques : quel OS, quelle version, etc.  
 
 Ce logiciel fonctionnant de façon similaire sur une multitude d'OS, dans ce guide, nous verrons les étapes d'installation du logiciel sur un système Ubuntu. Ubuntu est un OS libre d'accès et simple à utiliser, nous le recommandons pour une première prise en main. Il faudra l'adapter à vos besoins si vous décidez de changer d'OS par la suite.
@@ -31,11 +35,17 @@ Tapre maintenant _john_ dans votre terminal, il affiche le message suivant :
 
 ![Image 5](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/4.JPG)
 
+Nous pouvons voir la version du logiciel (ici 1.9.0).
 La ligne **usage** montre que nous pouvons fournir à John un fichier contenant une liste de mots de passe ainsi que choisir l'option avec laquelle il va tenter de déchiffrer les fichiers que nous lui indiquerons.
 
+Voici quelques exemples d'options envisageables pour John : 
+
+1. --single: mode par défaut, John tente des combinaisons variables en fonction du nom de l'utilisateur.
+2. --wordlist : l'attaque par dictionnaire. John utilise une liste de mots de passe fournis afin de craquer le mot de passe du fichier désigné.
+3. --incremental : brut force, john teste toutes les combinaisons de caractères jsuqu'à trouver le mot de passe. Infaillible en théorie mais peut prendre du temps en fonction de la force du mot de passe du fichier sélectionné.
 
 
-Difficultés rencontrées : problèmes techniques rencontrés  
+# Difficultés rencontrées : problèmes techniques rencontrés  
 Solutions trouvées : Solutions et alternatives trouvées  
 Tests réalisés : description des tests de performance, de sécurité, etc.  
 Résultats obtenus : ce qui a fonctionné  
