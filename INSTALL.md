@@ -17,23 +17,30 @@ Ce guide d'installation est créé à des fins éducatives et s'applique ici uni
 # Étapes d'installation et de configuration : instruction étape par étape  
 
 Ce logiciel peut être installé sur Ubuntu dans votre terminal en utilisant apt-get ou snap. Cependant, vous pouvez rencontrer des dysfonctionnements en l'installant avec la commande suivante : _sudo apt-get install john -y_. Nous recommandons donc de procéder avec l'installation snap. Le format snap permet l'installation de logiciels séparés du reste du système d'exploitation grâce à des mécanismes de sécurité. Il peut toutefois échanger du contenu en suivant certaines règles précises instaurées par l'administrateur.
-Snap est normalement nativement installé sur votre Ubuntu. Si toutefois ce n'était pas le cas, vous pouvez l'installer avec la commande suivante : _sudo apt update ; sudo apt install snapd_
-
-![Image 1](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/1.JPG?raw=true)
+Snap est normalement nativement installé sur votre Ubuntu. Si toutefois ce n'était pas le cas, vous pouvez l'installer avec la commande suivante : 
+```Bash
+sudo apt update
+sudo apt install snapd
+```
 
 Votre terminal vous affichera le message suivant validant la bonne installation du programme.
 
 ![Image 2 ](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/1.5.JPG)
 
-Vous pouvez maintenant lancer l'installation de John The Ripper par snap grâce à la commande suivante : _sudo snap install john-the-ripper_
-
-![Image 3](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/2.JPG)
+Vous pouvez maintenant lancer l'installation de John The Ripper par snap grâce à la commande suivante : 
+```Bash
+sudo snap install john-the-ripper
+```
 
 Un fois l'installation terminée, votre terminal affichera le message dans la photo suivante : 
 
 ![Image 4](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/3.JPG)
 
 Tapre maintenant _john_ dans votre terminal, il affiche le message suivant :
+
+```Bash
+john
+```
 
 ![Image 5](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/4.JPG)
 
