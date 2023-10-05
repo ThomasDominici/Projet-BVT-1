@@ -2,7 +2,7 @@
 ____
 ## **Le projet**
 
-Le projet réalisé permet de tester  le logiciel [_**John The Ripper**_](https://www.openwall.com/john/) à partir d'un poste client. Il sera testé la robustesse de mot de passe d'un serveur en utilisant une attaque par _dictionnaire_. 
+Le projet réalisé permet de tester  le logiciel [_**John The Ripper**_](https://www.openwall.com/john/) à partir d'un poste client. Il sert à testé la robustesse des mot de passe d'un serveur en utilisant une attaque par _dictionnaire_. 
 
 >### **John The Ripper c'est quoi?**
 * #### **Son usage:**
