@@ -16,7 +16,7 @@ sudo snap alias john-the-ripper.zip2john zip2john
 sudo snap alias john-the-ripper.keepass2john keepass2john
 ```
 
-Nous allons ensuite "envoyer" **John The Ripper** sur le dossier ciblé en redirigeant la sortie dans un fichier texte pour recupérer le hash du mot de passe avec la commande :
+Nous allons ensuite lancer **John The Ripper** sur le dossier ciblé en redirigeant la sortie dans un fichier texte pour recupérer le hash du mot de passe avec la commande :
 
 ```Bash
 zip2john /home/user/Bureau/dossier-cible.zip > hash.txt
@@ -39,7 +39,7 @@ Dans les fonctions avancées nous allons tester l'attaque par _dictionnaire_ .
 Pour ce faire, il nous faut une liste de mots de passe que l'ont peut télécharger sur [ openwall ](https://www.openwall.com/john/) ou ailleurs.
 Nous utiliserons ici la liste **password.txt** qui contient 3000 mots de passe. Certaines listes sont bien plus complètes et contiennent plusieurs millions de mots.
 
-Les premières étapes sont les mêmes que pour la méthode simple. On commence par récupérer le _hash_ du fichier cible , une fois fait on "envoie" **john** mais cette fois ci avec l'attaque par dictionnaire. Pour ce faire on utilise la commande :
+Les premières étapes sont les mêmes que pour la méthode simple. On commence par récupérer le _hash_ du fichier cible , une fois fait on lance **john** mais cette fois avec l'attaque par dictionnaire. Pour ce faire on utilise la commande :
 
 ```Bash
 john -w= /home/user/Bureau/password.lst hash.txt
