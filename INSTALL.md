@@ -1,4 +1,4 @@
-# Présentation du logiciel John The Ripper
+# Guide d'installation du logiciel John The Ripper
 
 Vous êtes en possession d'un dossier crypté dont vous avez oublié le mot de passe ou vous êtes en entreprise et devez tester la force des mots de passe de votre service ?
 Le logiciel John The Ripper est un logiciel open source qui vous permettra de réaliser vos tests de façon rapide et simple afin d'assurer votre sécurité et celle de vos collaborateurs. 
