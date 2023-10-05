@@ -6,7 +6,7 @@ Le logiciel John The Ripper est un logiciel open source qui vous permettra de r�
 ## Comment fonctionne John The Ripper ?
 
 John the ripper réussit à trouver les mots de passe en comparant leur hash avec les hashs des mots de passe qu'il essaye afin de trouver une correspondance.
-Le hachage de mot de passe est une pratique de sécurité des plus basiques qui consiste à brouiller les données en changer ce mot de passe en une série de caractères unique : le hash. Ce hash peut être créé par différents algorithmes (comme MD5, SHA1, SHA56...). Heureusement, John The Ripper est capable de décrypter les hashs de nombreux algorithmes de hashage. Il est même possible de télécharger des extensions si un algorithme n'est pas reconnu.
+Le hachage de mot de passe est une pratique de sécurité des plus basiques qui consiste à brouiller les données en changeant ce mot de passe en une série de caractères unique : le hash. Ce hash peut être créé par différents algorithmes (comme MD5, SHA1, SHA56...). Heureusement, John The Ripper est capable de décrypter les hashs de nombreux algorithmes de hashage. Il est même possible de télécharger des extensions si un algorithme n'est pas reconnu.
 
 ## Choix techniques : 
 
@@ -22,15 +22,15 @@ N'ayant pas de contrainte technique concernant l'utilisation du logiciel John th
 _____________
 
 
-### Installation d'un dossier partager Windows-Linux
+### Installation d'un dossier partagé Windows-Linux
 ________
 
 Le dossier étant sur une machine distante **windows**, il est nécessaire de réaliser les étapes suivante:
 
 1- **Créer un Utilisateur sur le serveur Windows.** Il servira de point d'échange:  
-  - Créer dans la session Administrator un utilisateurs supplémetaire.
+  - Créer dans la session Administrateur un utilisateur supplémentaire.
   - Cocher seulement les cases: Le mot de passe n'expire jamais; et  la case L'utilisateur ne peut pas changer de mot de passe.
-  - Quitter le session Administrateur et aller sur la session du nouvel utilisateur. Cela permet de l'activer et de vérifier l'éxactitude du mot de passe.
+  - Quitter le session Administrateur et aller sur la session du nouvel utilisateur. Cela permet de l'activer et de vérifier l'exactitude du mot de passe.
   - Créer un Dossier _A_partager_ dans le disk C:\\.
     _Le reste peut se faire sur cette session mais vous devrez renseigner à chaque fois le code Administrateur, sinon rechanger de session._
   - Aller dans les propriétés du dossier _A_partager_ pour le partager.
@@ -39,7 +39,7 @@ Le dossier étant sur une machine distante **windows**, il est nécessaire de r�
     _Pour l'exemple: Adresse IP = **192.168.1.8**; Utilisateur = **Echange**; Mot de passe = **azerty1***; Dossier = **Towindows**_
     
 2- **Configurer la machine Ubuntu:**
-  - Ouvrir un terminale.
+  - Ouvrir un terminal.
   
   - Installer le paquet cifs.
     ```bash
@@ -165,15 +165,15 @@ ____
 - Utilisation de John the ripper sur un dossier zip en mode simple sur une machine Ubuntu.
 - Utilisation de John the ripper avec l'outil zip2john sur un dossier zip en mode dictionnaire sur une machine Ubuntu.
 - Création d'un dossier partagé entre les deux machines virtuelles Windows Server 2022 (serveur) et Ubuntu (client).
-- Rcupération d'un protéger sur la machine Ubuntu venant du serveur Windows
+- Récupération d'un fichier protégé sur la machine Ubuntu venant du serveur Windows
 
   
 # Résultats obtenus : ce qui a fonctionné  
-- L'utilisation en mode simple du logiciel sur un dossier local protégés à permis la récupération du mot de passe.
+- L'utilisation en mode simple du logiciel sur un dossier local protégé à permis la récupération du mot de passe.
 - l'utilisation en mode dictionnaire du logiciel sur un dossier local protégé à permis la récupération du mot de passe.
 - Le montage d'un dossier de partage entre le client et le serveur à permis les échanges de dossier entre les deux machines.
-- Le montage automatique du partage à permis les échanges sans aavoir à refaire le montage à chaque utilisation.
-- L'utilisation en mode simple du logiciel sur un dossier partagé et protégés à permis la récupération du mot de passe.
+- Le montage automatique du partage à permis les échanges sans avoir à refaire le montage à chaque utilisation.
+- L'utilisation en mode simple du logiciel sur un dossier partagé et protégé à permis la récupération du mot de passe.
 - L'utilisation en mode dictionnaire du logiciel sur un dossier partagé et protégé à permis la récupération du mot de passe.
     
 
