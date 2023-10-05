@@ -71,15 +71,15 @@ Le dossier étant sur une machine distante **windows**, il est nécessaire de r�
     sudo umount -t cifs //192.168.1.8/Echange /mnt/Towindows/
     ```
   - Pour le montage automatique du dossier de partage:
-    Copier le fichier references dans /etc/references. Cela permettra au lancement automatique d'avoir les références nécessaires à chaque démarrage et de pouvoir supprimer le fichier 
-    dans le home par exemple.
+    Copier le fichier references dans /home/references. Cela permettra au lancement automatique d'avoir les références nécessaires à chaque démarrage et de pouvoir supprimer le 
+    fichier s'il était sur le bureau par exemple.
     Éditer le dossier /etc/fstab:
     ```bash
     sudo nano /etc/fstab
     ```
     Une fois dans l'éditeur écrire:
     ```bash
-    //192.168.1.8/Echanges /mnt/Towindows cifs credentials=/etc/references,uid=1000,gid=1000 0       0
+    //192.168.1.8/Echanges /mnt/Towindows cifs credentials=/home/references,uid=1000,gid=1000 0       0
     ```
   - Pour tester la configuration du  montage faire:
     ```bash
