@@ -29,7 +29,6 @@ john hash.txt
 ```
 
 Le terminal affichera alors le mot de passe du fichier.  
-Voila pour l'utilisation de base .
 
 ## Utilisation avancé
 
