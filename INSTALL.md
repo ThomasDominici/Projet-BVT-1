@@ -5,15 +5,18 @@ Le logiciel John The Ripper est un logiciel open source qui vous permettra de r�
 
 ## Comment fonctionne John The Ripper ?
 
-John réussit à trouver les mots de passe en comparant leur hash avec les hashs des mots de passe qu'il essaye afin de trouver une correspondance.
+John the ripper réussit à trouver les mots de passe en comparant leur hash avec les hashs des mots de passe qu'il essaye afin de trouver une correspondance.
 Le hachage de mot de passe est une pratique de sécurité des plus basiques qui consiste à brouiller les données en changer ce mot de passe en une série de caractères unique : le hash. Ce hash peut être créé par différents algorithmes (comme MD5, SHA1, SHA56...). Heureusement, John The Ripper est capable de décrypter les hashs de nombreux algorithmes de hashage. Il est même possible de télécharger des extensions si un algorithme n'est pas reconnu.
 
 ## Choix techniques : 
 
 Ce logiciel fonctionnant de façon similaire sur une multitude d'OS, dans ce guide, nous verrons les étapes d'installation du logiciel sur un système Ubuntu. Ubuntu est un OS libre d'accès et simple à utiliser, nous le recommandons pour une première prise en main. Il faudra l'adapter à vos besoins si vous décidez de changer d'OS par la suite.
-Pour l'installation de ce logiciel, il est nécessaire de connaître le système Ubuntu ainsi que son terminal.
 Ce guide d'installation est créé à des fins spécifiques et s'applique ici uniquement à un système Ubuntu. Vous pouvez visiter le [site officiel](https://www.openwall.com/john/) pour plus de renseignements ou pour l'installation sur d'autres OS. 
 
+
+## Pré-requis :
+
+N'ayant pas de contrainte technique concernant l'utilisation du logiciel John the ripper, vous pouvez l'utiliser sans difficultées sur votre système Ubuntu. Toutefois pour l'installation de ce logiciel, il est nécessaire de connaître le système Ubuntu ainsi que l'utilisation de son terminal et ses commandes. 
 
 # Étapes d'installation et de configuration : instruction étape par étape
 _____________
@@ -22,22 +25,27 @@ _____________
 ### Installation d'un dossier partager Windows-Linux
 ________
 
+Le dossier étant sur une machine distante **windows**, il est nécessaire de réaliser les étapes suivante:
+
 1- **Créer un Utilisateur sur le serveur Windows.** Il servira de point d'échange:  
   - Créer dans la session Administrator un utilisateurs supplémetaire.
   - Cocher seulement les cases: Le mot de passe n'expire jamais; et  la case L'utilisateur ne peut pas changer de mot de passe.
-  - Quitter le session Administrateur aller sur la session du nouvel utilisateur. Cela permet de l'activer et de vérifier l'éxactitude du mot de passe.
+  - Quitter le session Administrateur et aller sur la session du nouvel utilisateur. Cela permet de l'activer et de vérifier l'éxactitude du mot de passe.
   - Créer un Dossier _A_partager_ dans le disk C:\\.
     _Le reste peut se faire sur cette session mais vous devrez renseigner à chaque fois le code Administrateur, sinon rechanger de session._
   - Aller dans les propriétés du dossier _A_partager_ pour le partager.
   - Aller dans les propriétés de l'utilisateur; Donner les droits à l'utilisateur dans l'onglet _securité_ et accès au partage dans l'onglet _partage_
+  - Pour la suite vous devez retenir: Le **nom d'utilisateur**, le **mot de passe**, le **nom du dossier** partagé et l'**adresse IP** du serveur.
     _Pour l'exemple: Adresse IP = **192.168.1.8**; Utilisateur = **Echange**; Mot de passe = **azerty1***; Dossier = **Towindows**_
     
 2- **Configurer la machine Ubuntu:**
-  - Installer le paquet cifs
+  - Ouvrir un terminale.
+  
+  - Installer le paquet cifs.
     ```bash
     sudo apt install cifs-utils
     ```
-  - Créer un dossier qui servira de point de montage pour le partage 
+  - Créer un dossier qui servira de point de montage pour le partage.
     ```bash
     sudo mkdir /mnt/Towindows
     ```
@@ -65,7 +73,11 @@ ________
   - Pour le montage automatique du dossier de partage:
     Copier le fichier references dans /etc/references. Cela permettra au lancement automatique d'avoir les références nécessaires à chaque démarrage et de pouvoir supprimer le fichier 
     dans le home par exemple.
-    Éditer le dossier /etc/fstab et écrire
+    Éditer le dossier /etc/fstab:
+    ```bash
+    sudo nano /etc/fstab
+    ```
+    Une fois dans l'éditeur écrire:
     ```bash
     //192.168.1.8/Echanges /mnt/Towindows cifs credentials=/etc/references,uid=1000,gid=1000 0       0
     ```
@@ -89,18 +101,18 @@ Cependant, vous pouvez rencontrer des dysfonctionnements en l'installant avec la
 _sudo apt-get install john -y_.  
 Nous recommandons donc de procéder avec l'installation snap. Le format snap permet l'installation de logiciels séparés du reste du système d'exploitation grâce à des mécanismes de sécurité. Il peut toutefois échanger du contenu en suivant certaines règles précises instaurées par l'administrateur.
 
-1- Snap est normalement nativement installé sur votre Ubuntu. Si toutefois ce n'était pas le cas, vous pouvez l'installer avec la commande suivante : 
-    ```Bash
-    sudo apt update
-    sudo apt install snapd
-    ```
+1- Snap est normalement nativement installé sur votre Ubuntu. Si toutefois ce n'était pas le cas, vous pouvez l'installer avec la commande suivante :   
+  ```bash
+  sudo apt update
+  sudo apt install snap
+  ```  
 
   Votre terminal vous affichera le message suivant validant la bonne installation du programme.
 
   ![Image 2 ](https://github.com/ThomasDominici/Projet-BVT-1/blob/main/Ressources/Screenshots%20installation/1.5.JPG)
 
 
-2- Vous pouvez maintenant lancer l'installation de John The Ripper par snap grâce à la commande suivante : 
+2- Vous pouvez maintenant lancer l'installation de John The Ripper par snap grâce à la commande suivante :     
   ```Bash
   sudo snap install john-the-ripper
   ```
