@@ -75,4 +75,4 @@ Ce qui nous permettras d'afficher dans le terminal toutes les fonctions disponib
 
   Vérifier que les alias ont été correctement créés .
 
- Voila les problèmes les plus courants toutefois pour des information plus detaillées, il est conseillé de se rendre sur le [ site officiel ]( https://www.openwall.com/john/)
+ Voila les problèmes les plus courants toutefois pour des information plus detaillées, il est conseillé de se rendre sur le [ site officiel ]( https://www.openwall.com/john/).
