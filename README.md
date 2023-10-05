@@ -18,7 +18,7 @@ ___
 |              |      **Sprint 1**      |     **Sprint 2**     |
 |:--------------:|:-----------------------:|:---------------------:|
 | **Valentin**   | Rechercher et renseigner les informations sur John The Ripper, possibilitées, objectifs, capacitées et usages de celui-ci.| _Product owner_: A du rendre compte au client de façon à garder le cap de l'avancement. Installer et utiliser John The Ripper et établir le guide d'utilisation.|
-| **Thomas**   | _Product Owner_:  Maintenir la direction du projet. Monter les machines virtuelles choisies en réseaux interne. Synthétiser l'avancement de la semaine.| _Srum master_: Assurer la coordination et les conditions de travail. Rédiger le readme du projet et le guide d'installation. Monter et présenter la démonstration de John The Ripper.|
+| **Thomas**   | _Product Owner_:  Maintenir la direction du projet. Monter les machines virtuelles choisies en réseaux interne. Synthétiser l'avancement de la semaine.| _Scrum master_: Assurer la coordination et les conditions de travail. Rédiger le readme du projet et le guide d'installation. Monter et présenter la démonstration de John The Ripper.|
 | **Bilal**   | _Scrum Master_: Assurer la coordination et les bonnes conditions de travail. Définir les choix techniques. Installer le logiciel sur une VM| Monter le point de montage pour le dossier partagé entre les machines et intégrer le processus dans le guide d'installlation. Rédaction du Readme avec Thomas.| 
 | **Commun** | Mise au point de la première présentation. Recherche d'informations d'utilisation et d'installation du logiciel. Test du logiciel sur un dossier.| Élaboration de la présentation. Test du logiciel sur un dossier partagé en provenance du serveur Windows|
 
