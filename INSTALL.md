@@ -87,7 +87,7 @@ Le dossier étant sur une machine distante **windows**, il est nécessaire de r�
     ```
   - Relancer la machine en faisant:
     ```bash
-    reboot
+    sudo reboot
     ```
 _____________
 
