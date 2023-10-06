@@ -89,19 +89,20 @@ Le dossier étant sur une machine distante **windows**, il est nécessaire de r�
     ```bash
     sudo reboot
     ```
+
 _____________
 
 ### Installation du logiciel John the ripper.
 ___________
 
 
-    
 Ce logiciel peut être installé sur Ubuntu dans votre terminal en utilisant apt-get ou snap.  
 Cependant, vous pouvez rencontrer des dysfonctionnements en l'installant avec la commande suivante :  
 _sudo apt-get install john -y_.  
 Nous recommandons donc de procéder avec l'installation snap. Le format snap permet l'installation de logiciels séparés du reste du système d'exploitation grâce à des mécanismes de sécurité. Il peut toutefois échanger du contenu en suivant certaines règles précises instaurées par l'administrateur.
 
-1- Snap est normalement nativement installé sur votre Ubuntu. Si toutefois ce n'était pas le cas, vous pouvez l'installer avec la commande suivante :   
+1- Snap est normalement nativement installé sur votre Ubuntu. Si toutefois ce n'était pas le cas, vous pouvez l'installer avec la commande suivante : 
+
   ```bash
   sudo apt update
   sudo apt install snap
@@ -144,7 +145,12 @@ Nous recommandons donc de procéder avec l'installation snap. Le format snap per
   sudo snap alias john-the-ripper.keepass2john keepass2john 
   ```
 Si besoin:
-**Pour désinstaller : sudo snap remove john-the-ripper**
+**Pour désinstaller :**
+
+```bash
+sudo snap remove john-the-ripper
+```
+
 ________
 
 
@@ -175,7 +181,6 @@ ____
 - Le montage automatique du partage à permis les échanges sans avoir à refaire le montage à chaque utilisation.
 - L'utilisation en mode simple du logiciel sur un dossier partagé et protégé à permis la récupération du mot de passe.
 - L'utilisation en mode dictionnaire du logiciel sur un dossier partagé et protégé à permis la récupération du mot de passe.
-    
 
 
 

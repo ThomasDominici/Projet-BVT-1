@@ -3,8 +3,7 @@ ____
 ## **Le projet**
 
 Le projet réalisé permet de tester  le logiciel [_**John The Ripper**_](https://www.openwall.com/john/) à partir d'un poste client. Il sert à testé la robustesse des mot de passe d'un serveur en utilisant une attaque par _dictionnaire_. 
-
->### **John The Ripper c'est quoi?**
+### **John The Ripper c'est quoi?**
 * #### **Son usage:**
 > C'est un logiciel de cassage de mot de passe afin de tester l'efficacité de ceux-ci.
 * #### **Ses possibilitées:**
@@ -34,8 +33,8 @@ La machine server est une Windows Server 2022. Ce choix a été pris afin de ré
 L'attaque se fera par le mode dictionnaire et devra tester l'efficacité du mot de passe d'un dossier zip protégé. Le dossier sera sur le serveur et le logiciel éxécuté depuis le poste client.
 
 _____
-    
-## **Difficultées et solutions rencontrées:**
+
+## **Difficultés et solutions rencontrées:**
 
 | **Difficultées**   |     **Solutions**   |
 |:-------------------|--------------------:|
